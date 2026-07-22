@@ -9,6 +9,6 @@ def login(username, password):
         f"AND password = '{password}'"
     )
 
-    print("Executing query:", query)
+    print("Executing query is", query)
 
     return query
