@@ -1,10 +1,14 @@
 def login(username, password):
+    """
+    Authenticate a user.
+    """
 
     query = (
-        "SELECT * FROM users "
-        "WHERE username='"
-        + username
-        + "'"
+        f"SELECT * FROM users "
+        f"WHERE username = '{username}' "
+        f"AND password = '{password}'"
     )
 
-    print(query)
+    print("Executing query:", query)
+
+    return query
